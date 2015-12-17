@@ -9,7 +9,8 @@ public class CubeBehavior : MonoBehaviour {
 	}
 
 	void OnMouseDown () {
-	
+		if (aGameController.actionPhase == true) {
+			Destroy(gameObject);
+		}
 	}
-
 }
